@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nelson's Bookmarklet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bookmarklet created with the love of The Simpsons in mind">
+  <meta name="author" content="Ian Golfarb">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+    body {
+      text-align: center;
+      background-color: #006599;
+    }
+    .button {
+      position: relative;
+      top: 110px;
+      right: 220px;
+      border-top: 1px solid #96d1f8;
+      background: #65a9d7;
+      background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+      background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+      background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+      background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+      background: -o-linear-gradient(top, #3e779d, #65a9d7);
+      padding: 10px 20px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+      -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+      box-shadow: rgba(0,0,0,1) 0 1px 0;
+      text-shadow: rgba(0,0,0,.4) 0 1px 0;
+      color: white;
+      font-size: 20px;
+      font-family: Georgia, serif;
+      text-decoration: none;
+      vertical-align: middle;
+    }
+    .button:hover {
+      border-top-color: #28597a;
+      background: #28597a;
+      color: #ccc;
+    }
+    .button:active {
+      border-top-color: #1b435e;
+      background: #1b435e;
+    }
+  </style>
+</head>
+<body>
+  <div class="jumbotron">
+  <h1>The Nelsonator</h1>
+  <h5>Created by <a href="https://github.com/Superman2971">Ian Goldfarb</a> with the intention of sharing the love of Simpsons to all webpages.</h5>
+</div>
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-md-4">
+      <div class="row">
+        <a class="button" href="javascript:(function()%7Bfunction%20t()%7Bconsole.log(%22ran%20addAudio%22)%3Bvar%20t%3Ddocument.createElement(%22audio%22)%3Bt.src%3De%3Bt.loop%3Dfalse%3Bt.addEventListener(%22ended%22%2Cfunction()%7Bwindow.location.href%3D%22http%3A%2F%2Fwww.thesimpsons.com%2F%22%7D%2Ctrue)%3Bdocument.body.appendChild(t)%3Bt.play()%7Dfunction%20n()%7Bconsole.log(%22ran%20click_function%22)%3Bt()%7Dfunction%20r()%7Bconsole.log(%22ran%20remove_href%22)%3Bvar%20e%3Du%3Bfor(var%20t%3D0%3Bt%3Ce.length%3Bt%2B%2B)%7Bconsole.log(%22loop%20remove_href%22)%3Be%5Bt%5D.removeAttribute(%22href%22)%3Be%5Bt%5D.style.cursor%3D%22pointer%22%3Be%5Bt%5D.addEventListener(%22click%22%2Cn%2Cfalse)%3Bconsole.log(%22end%20of%20loop%20remove_href%22)%7D%7Dvar%20e%3D%22%2F%2Fs3-us-west-2.amazonaws.com%2Fbkmrklt%2Fharlem_shake%2FNelson_Haha.wav%22%3Bvar%20i%3Ddocument.getElementsByTagName(%22a%22)%2Cs%3Di.length%2Co%3Bvar%20u%3D%5B%5D%3Bfor(o%3D0%3Bo%3Cs%3Bo%2B%2B)%7Bu.push(i%5Bo%5D)%7Dr()%7D)()">The Nelsonator</a>
+      </div>
+      <div class="row">
+        <img src="nelson_image.jpg" alt="Image of Nelson laughing">
+      </div>
+      <div class="row well">
+        <p><b>Nelson Laughs</b> "Ha-ha" if you try to click links and redirects you from your current page to the Simpson's website.</p>
+        <p>If you're using a browser that supports it, you should be able to click and drag the bookmarklet above to your bookmarks or favorites bar.</p>
+      </div>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</body>
+</body>
+</html>
